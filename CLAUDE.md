@@ -1,93 +1,121 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for Carlos Felipe Siqueira Batista Soares
 
 <!-- SETUP: This file is populated by running /setup -->
 <!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a **public** job-application workspace. Claude acts as a career advisor and application assistant for Carlos Felipe Siqueira Batista Soares, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
 4. **Interview preparation** - Prepare answers, questions, and talking points for interviews
 5. **Career strategy** - Advise on positioning and personal branding
 
+**Human in the loop:** draft and score here; Carlos sends the application. Do not auto-submit to job boards.
+
+**Public CV (source of truth for claims):** `docs/CV.md`. Do not invent metrics. Do not name NDA clients.
+
 ## Candidate Profile
 
 <!-- This section is auto-populated by /setup. You can also fill it in manually. -->
 
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Carlos Felipe Siqueira Batista Soares
+- **Location:** Rio de Janeiro, RJ, Brazil (remote Brazil / LATAM; hybrid in Rio de Janeiro)
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
+  | Portuguese | Native |
+  | English | Fluent |
+  | Spanish | Basic (below professional working proficiency) |
   <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
   working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
   undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
   lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
   04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+- **CV language:** English
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Employed — ServiceNow Developer at Deloitte (moving from ServiceNow toward AI agents and full-stack-with-AI; ServiceNow is a financial safety net only)
+- **LinkedIn headline:** "Full-stack developer · AI agents & LLM infrastructure · ServiceNow CSA"
+- **GitHub:** https://github.com/carl0sfelipe
+- **Public CV:** [docs/CV.md](docs/CV.md)
 
 ### Education
 <!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **Technologist in Systems Analysis and Development** (in progress, expected Sep 2026) - Estácio
+- **Physical Education** (started 2013; in progress, expected Dec 2026) - UFRJ
+- **Full-stack web development** (bootcamp, completed May 2022) - Labenu
+- **Software engineering** (not completed) - École 42
 
 ### Professional Experience
 <!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **ServiceNow Developer** (Nov 2023 - present) - **Deloitte** (Rio de Janeiro, Brazil)
+  - Custom ITBM applications for one of Brazil’s largest financial institutions
+  - Product-oriented work on complex workflow optimization
+  - Do not invent metrics; client names stay anonymous (NDA)
+- **ServiceNow Developer** (Apr 2022 - Nov 2023) - **Accenture**
+  - High-complexity Service Portal widgets for a global nuclear-energy client (US, 10,000+ employees), under state regulatory rules and confidentiality requirements
+  - ITBM and CMDB modules; self-service portals and automation of critical processes
+- **Independent crypto investor** (2017 - Dec 2020)
+  - Managed personal capital in bitcoin and crypto as primary income until the December 2020 crash; then a structured move into software (42, Labenu)
+- **Co-founder** (2015 - 2017) - **Supplements e-commerce**
+  - 300% revenue growth through digital channels
+- **Sales manager** (2010 - 2013) - **TIM Store**
+  - Team leadership with consistent target delivery
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** ServiceNow (ITBM, CMDB, custom widgets, portals), JavaScript/TypeScript, React.js, Next.js, Node.js, deploy and tune LLMs (Llama, Mistral, Qwen) on cloud GPUs
+- **Secondary:** Python (AI/data), SQL (MySQL/PostgreSQL), Supabase, Docker, model quantization, generative-API integration
+- **Domain:** Enterprise ServiceNow for financial-sector clients; LLM inference infrastructure; e-commerce and sales
+- **Software:** Docker, RunPod, Lambda Labs, AWS
 
 ### Certifications
 <!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **ServiceNow Certified System Administrator (CSA)**
 
 ### Publications
 <!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- None
 
 ### Awards
 <!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- None recorded
+
+### Independent projects (public GitHub)
+- **alloy-remotecfg** — Grafana Alloy remotecfg (GetConfig) + HITL apply; deterministic core, official proto
+- **gigante-mocks** — 75-collector Mercury mock to demonstrate remotecfg vs Ansible
+- **ai-job-search** — this public English fork (assist, do not spray)
+- **ai-usage-hub** / **quota-mcp** — MCP servers for AI subscription usage/quota
+- **toon-spec** — AI-context portability spec (not the unrelated TOON serialization format)
 
 ### Behavioral Profile
 <!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Strengths:** High-complexity UI/widget work for specific operational needs; building agent tooling; comfortable in regulated/confidential environments
+- **Growth areas:** Formal MLOps (Kubernetes, production ML pipelines); large-scale model training; data engineering
+- **Thrives in:** Code-first teams (not low-code platform maintenance), clear ownership, AI-agent / LLM infrastructure work
 
 ### What Excites You
 <!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Building agents, MCP servers, and LLM infrastructure you can run and inspect
+- High-complexity interfaces for a real operational need
+- Open-source work that a hiring manager can clone and run
 
 ### Target Sectors
 <!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- AI agents / LLM infrastructure / MCP tooling
+- Full-stack product teams that ship with generative AI (React/Next.js/Node)
+- ServiceNow + AI hybrid roles only as a safety net, not the destination
 
 ### Deal-breakers
 <!-- Hard constraints on job search. Language requirements are handled separately and
 automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Relocation that is on-site outside Rio de Janeiro (remote Brazil/LATAM is fine)
+- Auto-applying or scraping in ways that violate a board’s terms — this workspace drafts; the human sends
+- Inventing metrics, client names, or skills that are not in `docs/CV.md` / this profile
 
 ## Repo Structure
+- `docs/CV.md` - Public English CV (hiring-manager copy)
+- `docs/OSS-VS-PRIVATE.md` - What is committed vs gitignored
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
 - `cover_letters/` - LaTeX cover letters (custom cover.cls template)
 - `.claude/skills/` - AI skill definitions for the application workflow

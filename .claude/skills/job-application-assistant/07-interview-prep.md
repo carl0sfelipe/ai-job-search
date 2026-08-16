@@ -14,28 +14,79 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+<!-- STAR stubs from the CV via /setup (Path B). Fill S/T/A/R with real detail before an interview — never invent. -->
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+## STAR Candidates (Complete Manually)
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 1. ITBM application for a large financial institution (complex enterprise delivery)
+**Source:** CV - Deloitte, Nov 2023 – present
+**What happened:** Built custom ITBM applications for one of Brazil’s largest financial institutions, with a product focus and complex workflow optimization.
+**Why it matters:** "Tell me about a complex project you shipped", "How do you handle a demanding/regulated client"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. ITBM/CMDB modules for a global client with 10,000+ employees (scale and international stakeholders)
+**Source:** CV - Accenture, Apr 2022 – Nov 2023
+**What happened:** Owned ITBM and CMDB modules for a global US client and built self-service portals plus automation of critical processes.
+**Why it matters:** "Experience with international stakeholders", "Working in English", "Process automation"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### 3. Deploy and optimize LLMs on cloud GPUs (initiative and self-directed learning)
+**Source:** CV - independent projects
+**What happened:** Deployed, tuned, and quantized open-source LLMs (Llama, Mistral, Qwen) on on-demand GPUs (RunPod, Lambda Labs, AWS).
+**Why it matters:** "Why AI engineering?", "Something you taught yourself", bridge for the lack of formal AI employment
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### 4. E-commerce with 300% revenue growth (owns the outcome, business sense)
+**Source:** CV - co-founder, 2015 – 2017
+**What happened:** Co-founded a supplements e-commerce and tripled revenue through digital channels.
+**Why it matters:** "Example of initiative", "Product/business sense", "A measurable result you are proud of"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### 5. Sales-team leadership against targets (leadership and resilience)
+**Source:** CV - TIM Store, 2010 – 2013
+**What happened:** Led a sales team with consistent target delivery.
+**Why it matters:** "Leadership experience", "How you handle results pressure"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### 6. Living off crypto and navigating the crash (risk, resilience, restart)
+**Source:** User - 2017 to Dec 2020, between e-commerce and the tech transition
+**What happened:** Lived on managing personal capital in bitcoin/crypto until the December 2020 crash; then a structured move into software (École 42, Labenu) and Accenture in April 2022.
+**Why it matters:** "Explain that period outside formal employment" (honest bridge for 2017–2022), "How you handle risk and failure", "Why you changed careers"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### 7. Alloy remotecfg + HITL apply (observability OSS)
+**Source:** Public repos alloy-remotecfg and gigante-mocks, Aug 2026
+**What happened:** Shipped a Grafana Alloy remotecfg GetConfig core with human-in-the-loop apply, plus a 75-collector mock used to show Ansible vs remotecfg before a real fleet.
+**Why it matters:** "Show me public work", "Human in the loop vs letting the model write production config", "Observability / SRE-adjacent"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 

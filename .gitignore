@@ -104,5 +104,15 @@ upskill/*.md
 .agents/**/*.log
 .agents/usage/
 
+# Local dumps and sessions (never ship)
+resume.html
+resume_files/
+.dispatch/
+.sessions/
+**/job_scraper/seen_jobs.backup*.json
+documents/plano_estrategico_master.md
+documents/pesquisa_estrategia_hiring_sandbox.md
+documents/roadmap_execucao_spinner_eaas.md
+
 # Brainstorm mockups (superpowers visual companion) - never ship
 .superpowers/

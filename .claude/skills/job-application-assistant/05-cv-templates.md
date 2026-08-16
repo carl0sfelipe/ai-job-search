@@ -130,11 +130,14 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For AI Agents / AI Engineer / LLM Engineer roles (primary target):**
+> Full-stack developer moving into AI engineering. Public work includes Grafana Alloy remotecfg with human-in-the-loop apply ([alloy-remotecfg](https://github.com/carl0sfelipe/alloy-remotecfg), [gigante-mocks](https://github.com/carl0sfelipe/gigante-mocks)), MCP servers for AI usage/quota, and an open spec for AI-context portability. I deploy, tune, and quantize open-source LLMs (Llama, Mistral, Qwen) on on-demand GPUs (RunPod, Lambda Labs, AWS). Four years of enterprise delivery (Deloitte, Accenture) for regulated, confidential clients.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Full Stack Developer (with AI) roles:**
+> Full-stack developer (React, Next.js, Node.js, TypeScript, Python) focused on high-complexity UIs for specific operational needs: four years of custom widgets and enterprise portals for regulated clients (large financial institution at Deloitte; nuclear-energy sector at Accenture). I wire generative AI end to end: APIs, MCP servers, and open-source LLMs on cloud GPUs.
+
+**For ServiceNow Developer roles (safety net only — candidate is leaving this track):**
+> ServiceNow CSA with four years of ITBM and CMDB, specialized in high-complexity Service Portal widgets for regulated clients: one of Brazil’s largest financial institutions (Deloitte) and a global nuclear-energy client with 10,000+ employees (Accenture).
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

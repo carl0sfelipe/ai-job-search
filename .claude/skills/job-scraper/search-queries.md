@@ -1,77 +1,86 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
+<!-- Personalized for Carlos Felipe: Rio de Janeiro / remote Brazil, move into AI/LLMs -->
 
 ## Installed portal CLIs (primary for `/scrape`)
 
 `/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Shipped country-agnostic CLIs include `linkedin-search` and `freehire-search`; Danish demos and any skill you add with `/add-portal` are included the same way. You do **not** need a matching `site:` line below for those CLIs to run.
 
+**For this profile:** use `linkedin-search` with `-l "Rio de Janeiro, Brazil"` and `-l "Brazil"` (remote), and `freehire-search` with `--country brazil` / `--remote` for tech roles. Leave the four Danish demo portals disabled. Consider `/add-portal` for Gupy and Programathor.
+
 The `site:` query templates in this file are the **WebSearch fallback** — for portals without a CLI, company career pages, or when a CLI fails.
 
-**Language scope:** write every query category in every language listed in your CLAUDE.md Languages table (typically 1-2, sometimes more). A posting requiring a language you have *not* declared, as a job condition, is excluded before scoring; a posting requiring a *higher level* than you declared in a language you *do* work in is flagged for your own judgment, not excluded — see `04-job-evaluation.md`'s Language Gate, the single source of truth for this rule. Translate each category's keywords rather than machine-translating word-for-word (e.g. "Frontend Developer" -> "Desarrollador Frontend", not a literal word-for-word translation) if you work in more than one language.
+**Language scope:** write each category in Portuguese and English (languages in CLAUDE.md; Spanish is basic and stays out of queries). Roles that require Spanish as a job condition are FLAG, not an automatic exclude — see the Language Gate in `04-job-evaluation.md`.
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary (Brazil market):
+- **gupy.io** - largest ATS/job board for Brazilian employers
+- **linkedin.com/jobs** - filter: Brazil / Rio de Janeiro; also covered by the `linkedin-search` CLI
+- **programathor.com.br** - Brazil tech niche board
+- **vagas.com.br** and **infojobs.com.br** - high-volume generalist boards
 
 Secondary (company career pages via Google):
 - Direct Google searches with `site:` filters for known target companies
 
 ## Query Categories
 
-Queries are grouped by priority. Write **each category in every language from your Languages table** (see Language scope above). Combine each query with your location terms (e.g. your city, region, or metro area) where the site supports it.
+Queries are grouped by priority. Combine each query with location terms (Rio de Janeiro, remote) where the site supports it.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+Portuguese keywords below are **search terms for Brazilian boards**, not product copy.
 
-These match your strongest and most desired career direction.
+### Priority 1: AI agents / AI engineering / LLMs
 
-```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_COUNTRY]
-```
-
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
-
-These match your domain expertise.
+Career target (explicit: leave ServiceNow-only work and move to AI agents).
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:gupy.io "engenheiro de ia" OR "ai engineer" rio de janeiro OR remoto
+site:gupy.io "agentes de ia" OR "ai agents" OR "ia generativa" desenvolvedor remoto
+site:linkedin.com/jobs "AI Engineer" OR "AI Agent Engineer" OR "LLM Engineer" brazil
+site:linkedin.com/jobs "agentic" OR "ai agents" developer remote brazil OR latam
+site:programathor.com.br "inteligência artificial" OR "llm" OR "agentes"
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 2: Full stack with AI (React / Next.js / Node.js + generative AI)
 
-Adjacent roles you could pivot into.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
-```
-
-### Priority 4: Broader Technical / Consulting
-
-Wider net for general technical roles.
+Natural pivot: owned stack + AI as the differentiator.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:gupy.io "desenvolvedor full stack" react node ia OR "inteligência artificial" remoto
+site:gupy.io "desenvolvedor full stack" react node rio de janeiro OR remoto
+site:programathor.com.br react next.js
+site:linkedin.com/jobs "full stack developer" react "next.js" OR "generative ai" brazil
+site:infojobs.com.br "desenvolvedor full stack" rio de janeiro
+```
+
+### Priority 3: ServiceNow (ITBM/CMDB) — safety net only
+
+The candidate wants to leave this track. Search only if P1/P2 is thin or on explicit request; hybrid ServiceNow + AI roles are the exception worth presenting.
+
+```
+site:linkedin.com/jobs servicenow "ai" OR "generative" brazil OR remote
+site:gupy.io servicenow desenvolvedor OR developer
+site:linkedin.com/jobs "ServiceNow Developer" brazil
+```
+
+### Priority 4: Broader technical / consulting
+
+Wider net: consultancies, international remote (fluent English).
+
+```
+site:gupy.io desenvolvedor javascript OR typescript remoto
+site:linkedin.com/jobs "software engineer" react OR node "remote" latam
+site:linkedin.com/jobs "technical consultant" servicenow OR "generative ai"
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+When evaluating results, verify the job location:
+- Rio de Janeiro (city) and metro area
+- Remote Brazil (any employer)
+- International remote / LATAM-friendly (fluent English; PJ/contractor)
+- São Paulo: discuss before treating as in-range
+- On-site outside RJ: too far unless the candidate explicitly says otherwise
 
 ## Language Filter
 

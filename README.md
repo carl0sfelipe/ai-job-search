@@ -4,13 +4,53 @@
 
 # AI Job Search
 
-*The job search that runs on your machine.*
+**Public fork by [Carlos Felipe](https://github.com/carl0sfelipe)** — [`carl0sfelipe/ai-job-search`](https://github.com/carl0sfelipe/ai-job-search)
+
+*Human-in-the-loop job search on your machine. Not an auto-apply bot.*
+
+[![CI](https://github.com/carl0sfelipe/ai-job-search/actions/workflows/ci.yml/badge.svg)](https://github.com/carl0sfelipe/ai-job-search/actions/workflows/ci.yml)
+
+## Hiring managers — start here
+
+I forked [Mads Lorentzen’s `ai-job-search`](https://github.com/MadsLorentzen/ai-job-search) (MIT) and made this workspace **English and public** so you can see how I work with agents.
+
+| | |
+|---|---|
+| **Author** | Carlos Felipe Siqueira Batista Soares ([@carl0sfelipe](https://github.com/carl0sfelipe)) |
+| **Public CV** | [docs/CV.md](docs/CV.md) |
+| **What ships vs stays local** | [docs/OSS-VS-PRIVATE.md](docs/OSS-VS-PRIVATE.md) |
+| **Upstream** | [MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search) — Mads built the framework and got hired with it. I did not write the original engine. |
+
+**Problem.** Applying well takes hours per role (fit, CV, letter, interview prep). Applying badly is spam.
+
+**What this does.** On my machine, an agent **evaluates fit**, **drafts** a tailored CV and cover letter from my profile, and **preps interviews**. I read the draft. **I send.** LinkedIn search is personal-use, low volume. There is no spray cannon.
+
+**How it uses the CV.** [`docs/CV.md`](docs/CV.md) is the public fact sheet. `/setup` and `/apply` read the profile in `CLAUDE.md` and `.claude/skills/job-application-assistant/`. Tailored PDFs are generated locally and **gitignored** so your inbox is not a git history.
+
+**Why it is public.** Reputation. You can clone it, read the English profile, and judge the work. Private bits (applications to named employers, diplomas, scrape state, `.env`) stay gitignored.
+
+### How to run (this fork)
+
+```bash
+git clone https://github.com/carl0sfelipe/ai-job-search.git
+cd ai-job-search
+for tool in linkedin-search freehire-search; do
+  (cd .agents/skills/$tool/cli && bun install)
+done
+claude   # then /setup  (already filled here)  →  /scrape  →  /apply <url>
+```
+
+Prerequisites: [Claude Code](https://claude.com/claude-code) (or another agent that reads `AGENTS.md`), Python 3.10+, [Bun](https://bun.sh), a LaTeX install for PDF CVs. Full upstream setup: [SETUP.md](SETUP.md).
+
+---
+
+## Upstream framework
 
 <p align="center">
   <a href="https://trendshift.io/repositories/43622?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-43622" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/43622/daily" alt="MadsLorentzen%2Fai-job-search | Trendshift" width="250" height="55"/></a>
 </p>
 
-[![CI](https://github.com/MadsLorentzen/ai-job-search/actions/workflows/ci.yml/badge.svg)](https://github.com/MadsLorentzen/ai-job-search/actions/workflows/ci.yml)
+*The job search that runs on your machine.*
 
 An AI-powered job application framework built on [Claude Code](https://claude.com/claude-code). Fork it, fill in your profile, and let Claude evaluate job postings, tailor your CV, write cover letters, and prepare you for interviews.
 

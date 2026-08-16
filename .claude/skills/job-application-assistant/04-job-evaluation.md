@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** ServiceNow (ITBM, CMDB, custom widgets, portals, workflows), JavaScript/TypeScript, React.js, Next.js, Node.js, deploy and tune of open-source LLMs (Llama, Mistral, Qwen) on cloud GPUs (RunPod, Lambda Labs, AWS), Docker, generative-API integration
+**Moderate match areas:** Python (AI/data), SQL (MySQL/PostgreSQL), Supabase, model quantization, C/C++
+**Weak match areas:** Go (basic), large-scale model training, formal MLOps (Kubernetes, production ML pipelines), data engineering, mobile
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -74,9 +74,9 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** ServiceNow delivery at large consultancies (Deloitte, Accenture) for enterprise/financial clients; full-stack web (React/Next.js/Node.js)
+**Moderate:** AI/LLM engineering (hands-on independent deploy and optimization, no formal employment in the field yet); sales and commercial management (prior experience)
+**Entry-level:** Formal MLOps, data engineering, ML research roles
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -107,13 +107,15 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Leave the ServiceNow-only track (explicit) and move into AI-agent engineering (agents, MCP servers, LLM orchestration)
+- Work as a code-first full-stack developer with generative AI (React/Next.js/Node + APIs), not low-code platforms
+- Work on LLM infrastructure (deploy, tune, quantize on cloud GPUs)
+
+**Priority note:** ServiceNow-only roles are a financial safety net — score Career Alignment low (<=40) even when Technical Skills is high. Hybrid roles (enterprise platform + AI) score better.
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: high-complexity UIs and tools for a specific operational need (complex custom widgets are the favorite part of the current job); building agents and AI tools; regulated/confidential environments are not a scare factor
+- Tasks that drain: low-code configuration and ServiceNow platform maintenance with no real code; leaving the ServiceNow-only ecosystem is the point
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
