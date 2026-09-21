@@ -1,5 +1,5 @@
 ---
-framework_version: 1.2.2
+framework_version: 1.2.3
 ---
 
 # Job Evaluation Framework
@@ -44,7 +44,9 @@ Read the posting's language requirements as stated for **the role itself** — n
 
 Judge the level comparison the same way you judge everything else in this framework: read both sides as written and reason about it, don't force either into a rigid scale — CEFR letters, LinkedIn-style buckets ("professional working proficiency"), and plain-English words ("conversational," "fluent," "native") all appear in the wild and don't map onto each other precisely. When genuinely unsure whether a stated bar exceeds the candidate's level, prefer FLAG over a silent PASS — the human is meant to be the tiebreaker, not the gate.
 
-**Worked example:** a candidate whose Languages table lists Spanish (Native) and English (B1/B2). A posting requiring "fluent Russian" → **FAIL**, Russian isn't declared at all. A posting requiring "fluent English" → **FLAG**, English is declared but "fluent" plausibly exceeds B1/B2 — score and draft the application, but tell the candidate this posting's bar may be a stretch and let them decide. A posting requiring "conversational English" or unspecified English → **PASS**, B1/B2 clears a "conversational" bar cleanly.
+**Worked example (not this fork):** a candidate whose Languages table lists Spanish (Native) and English (B1/B2). A posting requiring "fluent Russian" → **FAIL**, Russian isn't declared at all. A posting requiring "fluent English" → **FLAG**, English is declared but "fluent" plausibly exceeds B1/B2 — score and draft the application, but tell the candidate this posting's bar may be a stretch and let them decide. A posting requiring "conversational English" or unspecified English → **PASS**, B1/B2 clears a "conversational" bar cleanly.
+
+**This fork's table (do not copy the example above):** Portuguese (Native), English (Fluent), Spanish (Basic). A "fluent English" posting is at the declared level → **PASS**. Spanish above basic → **FLAG**. A language that is not on this table → **FAIL**.
 
 ## Scoring Dimensions
 
@@ -119,9 +121,9 @@ Does this role advance career goals and contain tasks that energize?
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Employed at Deloitte; ServiceNow income is the financial safety net while moving toward AI-agent / full-stack-with-AI work. Do not treat a pay cut into an unfunded AI role as automatic PASS.
+- **Flexibility**: Remote Brazil / LATAM; hybrid in Rio de Janeiro. On-site outside Rio is a deal-breaker. Available for international travel (US, UK, Canada, Mexico, Turkey). US B1/B2 does not authorize US employment.
+- **Professional development**: Leave ServiceNow-only platform maintenance; build agents, MCP servers, and LLM infrastructure. Formal MLOps, large-scale training, and data engineering are growth areas, not current claims.
 
 ### 6. Salary Benchmark (Optional)
 

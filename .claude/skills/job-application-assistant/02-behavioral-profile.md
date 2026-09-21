@@ -1,54 +1,54 @@
 ---
-framework_version: 1.0.0
+framework_version: 1.0.1
 ---
 
 # Behavioral Profile
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- You can use results from PI, DISC, Myers-Briggs, StrengthsFinder, or a self-assessment -->
+<!-- Self-assessment transcribed from CLAUDE.md. No PI, DISC, or Myers-Briggs instrument is on file; do not invent a named pattern. -->
 
 ## Overview
-[YOUR_NAME]'s behavioral assessment identifies them as a **[PROFILE_TYPE]** pattern. [1-2 SENTENCE_SUMMARY].
+Carlos Felipe's working style (self-assessment, no formal instrument on file) is code-first and ownership-heavy: he prefers building agent tooling and high-complexity interfaces over low-code platform maintenance.
 
 ## Core Behavioral Drives
 
 | Drive | Level | Meaning |
 |-------|-------|---------|
-| [DRIVE_1] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_2] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_3] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_4] | [LEVEL] | [DESCRIPTION] |
+| Ownership of a concrete system | High | Prefers clear ownership of agents, MCP servers, or a UI with a real operational need |
+| Code-first delivery | High | Thrives when the work is software, not low-code configuration |
+| Complexity with a purpose | High | High-complexity widgets and regulated workflows energize when they serve a specific operation |
+| Platform maintenance | Low | ServiceNow-only maintenance drains; it is the track he is leaving |
 
 ## Strongest Behaviors
-- **[BEHAVIOR_1]:** [DESCRIPTION]
-- **[BEHAVIOR_2]:** [DESCRIPTION]
-- **[BEHAVIOR_3]:** [DESCRIPTION]
+- **High-complexity UI/widget work:** builds custom Service Portal widgets for specific operational needs
+- **Agent tooling:** builds agents, MCP servers, and LLM infrastructure he can run and inspect
+- **Regulated environments:** comfortable under confidentiality and regulatory rules (financial and nuclear-energy clients)
 
 ## How You Work Best
-- [ENVIRONMENT_PREFERENCE_1]
-- [ENVIRONMENT_PREFERENCE_2]
-- [ENVIRONMENT_PREFERENCE_3]
+- Code-first teams (not low-code platform maintenance)
+- Clear ownership
+- AI-agent / LLM infrastructure work
 
 ## Growth Areas (frame positively in applications)
-- **[AREA_1]:** [HOW_TO_FRAME_IT_POSITIVELY]
-- **[AREA_2]:** [HOW_TO_FRAME_IT_POSITIVELY]
+- **Formal MLOps:** Kubernetes and production ML pipelines are a learning edge, not a current claim
+- **Large-scale model training and data engineering:** not claimed; do not imply production ML research experience
 
 ## Mapping to Job Posting Language
 
 When a job posting mentions these keywords, it's a **strong behavioral fit**:
-- [KEYWORD_OR_PHRASE_THAT_MATCHES_YOUR_STYLE]
-- [ANOTHER_KEYWORD]
+- AI agents, MCP, LLM infrastructure, ownership, code-first, high-complexity UI
+- Regulated or confidential delivery
 
 When a job posting mentions these, flag as **potential friction** (not deal-breaker):
-- [KEYWORD_OR_PHRASE_THAT_MIGHT_CLASH]
-- [ANOTHER_KEYWORD]
+- Low-code / no-code platform administration as the core of the role
+- ServiceNow-only maintenance with no real code
+- On-site work outside Rio de Janeiro
 
 ## Management Style Preferences
-- [WHAT_MANAGEMENT_STYLE_WORKS_FOR_YOU]
-- [WHAT_DOESN'T_WORK]
+- Clear ownership and a code-first team
+- Maintenance-only work with no ownership of the software is a poor fit
 
 ## Using This in Applications
-- **Cover letters:** [HOW_TO_WEAVE_IN_BEHAVIORAL_STRENGTHS]
-- **CV:** [WHAT_TO_EMPHASIZE]
-- **Interviews:** [WHAT_STAR_EXAMPLES_TO_USE]
-- **Don't overstate:** [WHAT_NOT_TO_CLAIM]
+- **Cover letters:** lead with owned public artifacts (alloy-remotecfg, MCP servers) and regulated-delivery experience; do not write a solo-hero tone that invents leadership scope
+- **CV:** emphasize high-complexity interfaces and inspectable agent/LLM work
+- **Interviews:** use the STAR stubs in `07-interview-prep.md` only after they are filled with real S/T/A/R; never invent results
+- **Don't overstate:** no formal MLOps, no large-scale training, no named NDA-client metrics, no PI/DISC label

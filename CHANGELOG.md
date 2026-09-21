@@ -13,6 +13,25 @@ per-file diff commands.
 
 ## [Unreleased]
 
+### Fixed
+
+- **This fork's `/apply` inputs no longer ship leftover `/setup` tokens.**
+  `02-behavioral-profile.md` was still the stock PI/DISC skeleton, `04-job-evaluation.md`
+  still had `[YOUR_FINANCIAL_SITUATION_CONTEXT]` / schedule / growth tokens, and
+  `cv/main_example.tex` (one of the three grounding-audit sources of truth) was still
+  `[First]` `[Last]` / `[Job Title]`. `/apply` would either leak placeholders into
+  drafts or raise false profile-consistency warnings against `01-candidate-profile.md`
+  and `CLAUDE.md`. Filled from those files and `docs/CV.md` only; no invented metrics
+  or PI/DISC label. STAR stubs in `07-interview-prep.md` stay blank on purpose.
+  Pinned by `tests/test_profile_setup_tokens.py`. Master CV: `lualatex` exit 0,
+  exactly 2 pages, email and Deloitte in the PDF text layer.
+
+- **Language Gate worked example is labeled as not this fork.** The example
+  table (Spanish Native, English B1/B2) would FLAG a "fluent English" posting
+  and treat Spanish as native. This fork's table is Portuguese (Native),
+  English (Fluent), Spanish (Basic). `framework_version` on `02` (1.0.0 → 1.0.1)
+  and `04` (1.2.2 → 1.2.3) bumped with the personalization.
+
 ### Changed
 
 - **CONTRIBUTING: invited PRs are reserved for the invitee** - when a maintainer comment
