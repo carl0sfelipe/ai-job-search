@@ -50,6 +50,10 @@ class PersonalizedProfileSetup(unittest.TestCase):
         for token in EVAL_LEFTOVERS:
             self.assertNotIn(token, text, f"unfilled /setup token in 04: {token}")
         self.assertIn("Remote Brazil", text)
+        self.assertIn("This fork's table", text)
+        self.assertIn("English (Fluent)", text)
+        self.assertIn("Spanish (Basic)", text)
+        self.assertIn("not this fork", text)
 
     def test_master_cv_is_the_public_profile_not_the_stock_template(self):
         text = MASTER_CV.read_text(encoding="utf-8")

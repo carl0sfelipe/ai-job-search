@@ -26,6 +26,12 @@ per-file diff commands.
   Pinned by `tests/test_profile_setup_tokens.py`. Master CV: `lualatex` exit 0,
   exactly 2 pages, email and Deloitte in the PDF text layer.
 
+- **Language Gate worked example is labeled as not this fork.** The example
+  table (Spanish Native, English B1/B2) would FLAG a "fluent English" posting
+  and treat Spanish as native. This fork's table is Portuguese (Native),
+  English (Fluent), Spanish (Basic). `framework_version` on `02` (1.0.0 → 1.0.1)
+  and `04` (1.2.2 → 1.2.3) bumped with the personalization.
+
 ### Changed
 
 - **CONTRIBUTING: invited PRs are reserved for the invitee** - when a maintainer comment
