@@ -119,9 +119,9 @@ Does this role advance career goals and contain tasks that energize?
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Employed at Deloitte; ServiceNow income is the financial safety net while moving toward AI-agent / full-stack-with-AI work. Do not treat a pay cut into an unfunded AI role as automatic PASS.
+- **Flexibility**: Remote Brazil / LATAM; hybrid in Rio de Janeiro. On-site outside Rio is a deal-breaker. Available for international travel (US, UK, Canada, Mexico, Turkey). US B1/B2 does not authorize US employment.
+- **Professional development**: Leave ServiceNow-only platform maintenance; build agents, MCP servers, and LLM infrastructure. Formal MLOps, large-scale training, and data engineering are growth areas, not current claims.
 
 ### 6. Salary Benchmark (Optional)
 
