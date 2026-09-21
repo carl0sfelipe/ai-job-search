@@ -1,8 +1,8 @@
-%% Example CV - [YOUR_NAME]
-%% Comprehensive overview of all competencies, experience, and achievements.
-%% Use as a master reference when tailoring role-specific CVs.
+%% Master CV - Carlos Felipe Siqueira Batista Soares
+%% Comprehensive overview of competencies, experience, and public work.
+%% Source of truth for /apply grounding (with 01-candidate-profile.md and CLAUDE.md).
+%% Facts only from docs/CV.md / 01-candidate-profile.md. Do not invent metrics.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -33,7 +33,7 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Carlos Felipe Siqueira Batista Soares - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -41,15 +41,14 @@
 }}
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
+\usepackage{needspace}
 
 % personal data
-\name{[First]}{[Last]}
-% If you have no address to list, DELETE this whole line. \address{}{}{} fails
-% with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Carlos Felipe Siqueira Batista}{Soares}
+\address{Rio de Janeiro, RJ, Brazil}{}{}
+\phone[mobile]{+55 22 98107-8606}
+\email{carlosfelipe2050@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/carl0sfelipe}{LinkedIn}, \href{https://github.com/carl0sfelipe}{GitHub}}
 
 \begin{document}
 
@@ -60,7 +59,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Full-stack developer moving into AI engineering. Public work includes Grafana Alloy remotecfg with human-in-the-loop apply (\href{https://github.com/carl0sfelipe/alloy-remotecfg}{alloy-remotecfg}, \href{https://github.com/carl0sfelipe/gigante-mocks}{gigante-mocks}), MCP servers for AI usage/quota, and an open spec for AI-context portability. I deploy, tune, and quantize open-source LLMs (Llama, Mistral, Qwen) on on-demand GPUs (RunPod, Lambda Labs, AWS). Four years of enterprise delivery (Deloitte, Accenture, ServiceNow CSA) for regulated, confidential clients. Applications from this workspace are drafted with Claude Code; I send them.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -70,15 +69,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{AI agents and LLMs}: agent tooling, MCP servers, orchestration, generative-API integration; deploy, tune, and quantize open-source models (Llama, Mistral, Qwen) on on-demand GPUs.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Full stack}: React.js, Next.js, Node.js, TypeScript/JavaScript (ES6+), Supabase; high-complexity UIs for specific operational needs.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{ServiceNow (ITBM/CMDB)}: Service Portal custom widgets; custom apps, self-service portals, and workflow automation under regulatory and confidentiality rules; CSA.
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Languages and data}: Python (AI/data), SQL (MySQL/PostgreSQL), C, C++, Go (basic).
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Infrastructure}: Docker, cloud GPUs (AWS, RunPod, Lambda Labs).
 
 \end{itemize}
 
@@ -90,34 +89,61 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Nov 2023--present}{ServiceNow Developer}{Deloitte}{Rio de Janeiro, Brazil}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1 - be specific, use numbers where possible]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
-    \item [Achievement or responsibility 4]
+    \item Custom ITBM applications for one of Brazil's largest financial institutions. Client name and internal metrics stay out of this CV (NDA).
+    \item Product-oriented work on complex workflow optimization.
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Apr 2022--Nov 2023}{ServiceNow Developer}{Accenture}{}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
+    \item High-complexity Service Portal widgets for a global nuclear-energy client (US, 10,000+ employees), under state regulatory rules and confidentiality requirements.
+    \item ITBM and CMDB modules, self-service portals, and automation of critical processes.
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{2017--Dec 2020}{Independent crypto investor}{}{}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
+    \item Managed personal capital in bitcoin and other crypto as primary income until the December 2020 crash.
+    \item Structured transition into software (\'Ecole 42, Labenu bootcamp), then Accenture in April 2022.
 \end{itemize}}}
 
+\vspace{3pt}
+
+\needspace{5\baselineskip}
+\item{\cventry{2015--2017}{Co-founder}{Supplements e-commerce}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item 300\% revenue growth through digital channels.
+\end{itemize}}}
+
+\vspace{3pt}
+
+\needspace{5\baselineskip}
+\item{\cventry{2010--2013}{Sales manager}{TIM Store}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Team leadership with consistent target delivery.
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     INDEPENDENT PROJECTS
+% ============================================================
+
+\section{Independent Projects}
+\vspace{1pt}
+\begin{itemize}
+\item \textbf{\href{https://github.com/carl0sfelipe/alloy-remotecfg}{alloy-remotecfg}}: Grafana Alloy remotecfg (GetConfig) plus human-in-the-loop apply. Deterministic config core, official Grafana proto. No model in the collector path.
+\item \textbf{\href{https://github.com/carl0sfelipe/gigante-mocks}{gigante-mocks}}: 75-collector Mercury production mock (Ansible vs remotecfg scoreboard) used to show the HITL apply loop before a real fleet.
+\item \textbf{\href{https://github.com/carl0sfelipe/ai-job-search}{ai-job-search}}: this public English fork. Evaluate fit, draft CV and cover letter with Claude Code; I send. Not an auto-apply bot.
+\item \textbf{\href{https://github.com/carl0sfelipe/ai-usage-hub}{ai-usage-hub} / \href{https://github.com/carl0sfelipe/quota-mcp}{quota-mcp}}: MCP servers for AI-subscription usage and quota.
+\item \textbf{\href{https://github.com/carl0sfelipe/toon-spec}{toon-spec}}: open spec for AI-context portability (JSON documents with segment \texttt{injection\_priority} for context-window trimming). Not the unrelated TOON serialization format.
 \end{itemize}
 
 % ============================================================
@@ -128,16 +154,42 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\needspace{5\baselineskip}
+\item{\cventry{in progress}{Technologist in Systems Analysis and Development}{Est\'acio}{}{}{\vspace{1pt}
+In progress, expected Sep 2026.
 }}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\needspace{5\baselineskip}
+\item{\cventry{2013--in progress}{Physical Education}{UFRJ}{}{}{\vspace{1pt}
+Started 2013 (full-time 2013--2017; resumed); expected Dec 2026.
 }}
 
+\vspace{3pt}
+
+\needspace{5\baselineskip}
+\item{\cventry{completed May 2022}{Full-stack web development}{Labenu}{}{}{\vspace{1pt}
+Bootcamp, completed May 2022.
+}}
+
+\vspace{3pt}
+
+\needspace{5\baselineskip}
+\item{\cventry{not completed}{Software engineering}{\'Ecole 42}{}{}{\vspace{1pt}
+Not completed.
+}}
+
+\end{itemize}
+
+% ============================================================
+%     CERTIFICATIONS
+% ============================================================
+
+\section{Certifications}
+\vspace{1pt}
+\begin{itemize}
+\item ServiceNow Certified System Administrator (CSA).
 \end{itemize}
 
 % ============================================================
@@ -147,27 +199,7 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item [Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item Portuguese (native), English (fluent), Spanish (basic; below professional working proficiency).
 \end{itemize}
 
 % ============================================================
